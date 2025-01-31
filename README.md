@@ -27,11 +27,14 @@ The tool is modular, allowing you to run specific scripts depending on your need
 - **Authentication and Identification**: Enforces strong password policies, disables unused accounts, and restricts root access.
 - **File Protection**: Restricts access to sensitive files, configures AppArmor, and sets up auditing with `auditd`.
 - **Network Hardening**: Hardens SSH configurations, sets up firewalls (UFW and iptables), and restricts access to network sockets and pipes.
+- **Logging**: Logs all activities to `/var/log/linsec/` for auditing and troubleshooting.
 
 ---
 
 ## Scripts Overview
+Here’s a video demonstrating the LinSec tool in action:
 
+[![LinSec Demo Video](./assets/demo.mp4)](./assets/demo.mp4)
 ### 1. **Hardware Hardening (`01.sh`)**
 - Disables USB storage.
 - Restricts access to serial ports.
